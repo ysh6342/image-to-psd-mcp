@@ -1,0 +1,31 @@
+{
+  "name": "image-to-psd-mcp",
+  "version": "1.0.0",
+  "description": "UMG JSON to PSD pipeline exposed as an MCP server",
+  "type": "module",
+  "bin": {
+    "umg-mcp": "./mcp-server.js"
+  },
+  "main": "mcp-server.js",
+  "scripts": {
+    "start": "node mcp-server.js --mode mcp",
+    "dev": "node mcp-server.js --mode dev",
+    "test": "node --eval \"console.log('no tests defined')\""
+  },
+  "keywords": [
+    "mcp",
+    "umg",
+    "psd",
+    "placeholder",
+    "pipeline"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.2",
+    "ag-psd": "^28.4.1",
+    "canvas": "^3.2.0",
+    "yargs": "^18.0.0",
+    "zod": "^3.23.8"
+  }
+}
